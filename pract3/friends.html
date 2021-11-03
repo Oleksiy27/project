@@ -4,6 +4,26 @@
     <link rel="stylesheet" href="style.css">
     <title>Друзі Марчука Олексія Олексійовича</title>
     <style>
+      table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px solid black;
+        }
+
+        th,
+        td {
+            min-width: 100px;
+            text-align: center;
+            border: 2px solid black;
+            padding: 1%;
+        }
+          table tr:nth-child(even) td {
+            background: gray;
+        }
+
+table tr:nth-child(odd) td {
+            background: white;
+        }
       .zmostt{
          background-color: darkgreen;
       border: 1px solid black;
@@ -22,27 +42,8 @@
       width: 100px;
       text-align: center;
     }
-     table {
-    width: 100%;
-    border-collapse: collapse;
-    border: 1.5px solid red;
-
-      }
-      td,th {
-        min-width: 60px;
-        padding: 1%;
-        border: 1.5px solid black;
-    
-      }
-      table td:nth-child(odd) {
-        background-color: gray;
-
-      }
-      table th:nth-child(even){
-        background-color: white;
-      }
       
- </style>style>
+ </style>
  </head>
 <body>
  <h1>Друзі Марчука Олексія Олексійовича</h1>
@@ -50,10 +51,10 @@
         Назад на головну
     </a></p>
  <h2>Мої друзі</h2>
-  <table border="1" width="100%" cellpadding="5">
-   <caption> Мої друзі </caption>
+ <table>
+   <caption><h2> Мої друзі </h2> </caption>
  <tr>
- <th>Прізвище</h>
+ <th>Прізвище</th>
  <th>Ім'я</th>
  <th>Дата народження</th>
  <th>Адреса проживання</th>
@@ -87,6 +88,7 @@
  <td>місто Коломия,вул Прикарпатська №23</td>
  <td>0980756474</td>
  </tr>
+</table>
   
  </body>
 </html>
